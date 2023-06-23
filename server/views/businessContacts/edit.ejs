@@ -1,0 +1,61 @@
+
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- content for Edit page -->
+<main class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-8"></div>
+        <h1 class="mb-4"><%= title %> </h1>
+
+        <form style="top: 200px;;" class="form" method="POST">
+            <div class="form-group">
+                <label for="nameTextField" class="mb-1">Name:</label>
+                <input 
+                    type="text" 
+                    class="form-control mb-3"
+                    id="nameTextField"
+                    placeholder="Enter name"
+                    name="name"
+                    value="<%- contact.name %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="nameTextField" class="mb-1">Number:</label>
+                <input 
+                    type="text" 
+                    class="form-control mb-3"
+                    id="numberTextField"
+                    placeholder="Enter number"
+                    value="<%- contact.number %>" 
+                    name="number" 
+                    
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="nameTextField" class="mb-1">Email:</label>
+                <input 
+                    type="text" 
+                    class="form-control mb-3"
+                    id="emailTextField"
+                    placeholder="Enter email"
+                    name="email" 
+                    value="<%- contact.email %>"
+                    required>
+           
+                </div>
+
+                <br>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+
+                    <a href="/contact-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
