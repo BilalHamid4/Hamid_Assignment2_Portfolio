@@ -2,6 +2,6 @@
 module.exports = 
 {
     
-    //"URI": "mongodb://localhost/my_express_site"
-  "URI": "mongodb+srv://BilalHamid:B1234567890l@mongodbserver.opav6jv.mongodb.net/my_business_contects?retryWrites=true&w=majority"
+    //"URI": "mongodb://localhost/game_store"
+  "URI": "mongodb+srv://BilalHamid:B1234567890l@mongodbserver.opav6jv.mongodb.net/Contact_business_List?retryWrites=true&w=majority"
 }
